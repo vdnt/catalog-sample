@@ -1,0 +1,8 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: bookstore
+  description: Fake bookstore system used for Backstage catalog tryouts
+spec:
+  owner: bookstore-team

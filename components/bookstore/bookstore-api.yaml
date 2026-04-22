@@ -1,0 +1,13 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: bookstore-api
+  description: Fake bookstore API service used for Backstage tryouts
+spec:
+  type: api
+  lifecycle: production
+  owner: bookstore-team
+  system: bookstore
+  dependsOn:
+    - component:bookstore

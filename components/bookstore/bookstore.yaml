@@ -1,0 +1,12 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: bookstore
+  description: Fake bookstore service
+spec:
+  type: service
+  lifecycle: production
+  owner: bookstore-team
+  system: bookstore
+  deployedTo: [sandbox2, prod3]

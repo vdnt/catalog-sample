@@ -1,0 +1,24 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: acme-books
+  description: Acme Books organization
+spec:
+  type: organization
+  profile:
+    displayName: Acme Books
+  children:
+    - bookstore-team
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: bookstore-team
+  description: Team owning bookstore demo services
+spec:
+  type: team
+  profile:
+    displayName: Bookstore Team
+  parent: acme-books
+  children: []
